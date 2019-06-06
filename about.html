@@ -1,0 +1,178 @@
+---
+layout: dash
+title: BITS 19 - About
+---
+
+<script type="text/javascript">
+  var date = "June 1, 2019 12:00:00 AM";
+</script>
+
+<div class="main-panel">
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg  navbar-sticky fixed-top " id="navigation-example" style="background:blue;">
+    <div class="container-fluid">
+      <div class="navbar-wrapper">
+        <div class="navbar-brand">About</div>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+        aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./">
+              <i class="material-icons">home</i>
+              <p class="d-lg-none d-md-block">
+                Home Page
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <div class="content" style="margin-top: -12px !important;">
+
+    <div class="container-fluid">
+
+      <div class="row" id="myUL">
+        
+        <div class="col-md-12">
+          <div class="card card-chart task-card">
+            <div class="card-header {{ mentor.description }}">
+              <h2 style="color:whitesmoke; text-align: center">
+                
+                  BITS
+              </h2>
+            </div>
+            <div class="card-body" style="margin-top:-20px;">
+
+                  <div style="width:100%">
+                    <p class="card-title" style="text-align:center; font-weight: 700; margin-top:-10px;">
+                        BITS, The Intra-School task-based ICT competition
+                        is organized by the Ananda College ICT Society<br> for the
+                        first time in Sri Lanka with the intention of providing a
+                        platform for our school students and polish<br>their IT
+                        knowledge in the different fields of ICT.</h5>
+                  </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="myUL">
+        {% for mentor in site.data.mentors %}
+        <div class="col-md-4 col-md-4">
+          <div class="card card-chart task-card">
+            <div class="card-header {{ mentor.description }}">
+              <h6>
+                <div class="card-new">
+                  {{ mentor.rank }}
+                </div>
+              </h6>
+            </div>
+            <div class="card-body">
+              <table>
+                <tr>
+                  <img class="mx-auto rounded-square" src="./assets/img/mentors/{{mentor.image}}.jpg" alt="image"
+                    width="100%" style="border-radius: 5px;">
+
+                </tr>
+                <tr>
+
+                  <div style="width:100%">
+                    <h2 class="card-title" style="text-align:center; font-weight: 700; font-size-adjust: initial">
+                      {{ mentor.firstname }}</h2>
+                    <h5 class="card-title" style="text-align:center; font-weight: 700; margin-top:-10px;">
+                      {{ mentor.lastname }}</h5>
+                  </div>
+
+                  <span class="">{{  mentor.name }}</span>
+
+                </tr>
+                <tr>
+
+                </tr>
+              </table>
+            </div>
+            <div style="display:block; padding-left:20px; opacity:0.25">
+              <small>Click on the task to see more details. </small>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <ul class="list-inline social-buttons" style="margin: 0px;">
+                  {% if mentor.github %}
+                  <li class="list-inline-item">
+                    <a href="https://github.com/{{mentor.github}}" target="blank">
+                      <i class="fa fa-github-square" style="font-size:25px; color:#000000 !important"></i>
+                    </a>
+                  </li>
+                  {% endif %}
+                  {% if mentor.twitter %}
+                  <li class="list-inline-item">
+                    <a href="https://twitter.com/{{mentor.twitter}}" target="blank">
+                      <i class="fa fa-twitter-square" style="font-size:25px; color:#0c8ad3 !important"></i>
+
+                    </a>
+                  </li>
+                  {% endif %}
+                  {% if mentor.facebook %}
+                  <li class="list-inline-item">
+                    <a href="https://facebook.com/{{mentor.facebook}}" target="blank">
+                      <i class="fa fa-facebook-square" style="font-size:25px; color:#4868ff !important"></i>
+                    </a>
+                  </li>
+                  {% endif %}
+                  {% if mentor.instagram %}
+                  <li class="list-inline-item">
+                    <a href="https://www.instagram.com/{{mentor.instagram}}" target="blank">
+                      <i class="fa fa-instagram" style="font-size:25px; color:#c523a7 !important"></i>
+
+                    </a>
+                  </li>
+                  {% endif %}
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+
+  <style>
+    .card-new {
+      padding: 5px;
+      background-color: #1f294038;
+      border-radius: 10px;
+      border-left: 5px solid #1a203485;
+      margin-bottom: 0;
+      top: 6px;
+      left: 10px;
+      position: absolute;
+    }
+
+    .card-new2 {
+      padding: 5px;
+      background-color: #595d6694;
+      border-radius: 10px;
+      border-left: 5px solid #1a2034;
+      border-right: 5px solid #1a2034;
+      text-align: center;
+      margin-bottom: 0;
+      top: 6px;
+      right: 10px;
+      position: absolute;
+    }
+  </style>

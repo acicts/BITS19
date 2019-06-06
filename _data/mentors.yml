@@ -1,0 +1,71 @@
+- rank: Project Coordinator
+  firstname: Supun
+  lastname: Tharinda Edirisuriya
+  name: <b>Grade 12<br>Web Developer & Programmer</b><br>Google Code-in Winner 2018<br>YCS 2016 & 17 - Merit Award<br>Envisage '18 - 1st Place Web Designing
+  description: card-header-success
+  image: supun_tharinda
+  github: STEdirisuriya
+  twitter: Supun_Tharinda_
+  instagram: _supun_tharinda_
+  facebook: SupunTharindaE
+
+- rank: Sub Coordinator
+  firstname: Hasala
+  lastname: Heyianthuduwa
+  name: <b>Grade 12<br>Programmer, Graphic Designer</b><br>YCS 2016 & 17 - Merit Award<br>SLIIT CODEFEST 2018 - Merit Award<br>Envisage '18 - 2nd Place Grapic Designing
+  description: card-header-warning
+  image: Hasala
+  github: hasala2002
+  twitter: Hasala9
+
+- rank: Organizing Committee
+  firstname: Hasalu
+  lastname: Botheju
+  name: <b>Grade 12<br>Web Designer</b><br>YCS 2016 & 17 - Merit Award<br>SLIIT CODEFEST 2018 - Merit Award<br>Envisage '18 - 2nd Place Web Designing<br>
+  description: card-header-info
+  image: hasalu
+  github: HasaluSL
+  instagram: cyber_doc
+
+- rank: Organizing Committee
+  firstname: Pahan
+  lastname: Samudika Abhayawardhane
+  name: <b>Grade 12<br>Graphic Designer, Video Designer</b><br>Envisage '18 1st Place Graphic Designing<br>BITS 2019 Design Side Winner<br>
+  description: card-header-info
+  image: mentor
+  instagram: ___pahan_samudika___
+
+- rank: Organizing Committee
+  firstname: Induwara
+  lastname: Ranathunga
+  name: <b>Grade 12<br></b><br><br><br>
+  description: card-header-info
+  image: induwara
+  instagram: _.induu_
+  github: InduwaraRH
+
+- rank: Organizing Committee
+  firstname: Sanjaya
+  lastname: Dahan Weerakoon
+  name: <b>Grade 12<br></b><br><br><br>
+  description: card-header-info
+  image: sanjaya
+  instagram: _.sxnja.__
+
+- rank: Organizing Committee
+  firstname: Savindu
+  lastname: Madhubhashitha D. kumarasekara
+  name: <b>Grade 12<br>Video Designer</b><br><br><br>
+  description: card-header-info
+  image: savindu
+  instagram: _the_mazner_
+
+- rank: Organizing Committee
+  firstname: Adeesh
+  lastname: Perera
+  name: <b>Grade 12<br>Programmer</b><br><br><br>
+  description: card-header-info
+  image: mentor
+  github: AdeeshPe
+  twitter: adeeshpe
+

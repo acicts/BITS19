@@ -1,0 +1,128 @@
+- category: Code
+  topic:  Simple Programming
+  description: Create a small calculator with basic functions.
+  number: C1
+  simple: true
+
+- category: Design
+  topic: 2D Designing
+  description: Design a 2D graphic image of Ananda College.
+  number: D1
+  simple: true
+
+- category: Explore
+  topic: First step to GCI
+  description: Learn what is Google Code-in and create a presentation.
+  number: E1
+  simple: true
+
+- category: Code
+  topic: Web Design
+  description: Create a small website for Ananda College as a ACICTS Projects.
+  number: C2
+
+- category: Design
+  topic: Graphic Design
+  description: Design a poster for upcoming event PULZ 2020.
+  number: D2
+
+- category: Explore
+  topic: Blogging
+  description: Create a blog about history of Robotics to display on ACICTS BLOGS.
+  number: E2
+
+- category: Code
+  topic: Arduino
+  description: Create a solution for a daily social issue using Arduino.
+  number: C3
+
+- category: Design
+  topic: Video Design
+  description: Create a video clip on how you imagine Ananda College will be in 2050.
+  number: D3
+
+- category: Explore
+  topic: Tutorial Making
+  description: Understand what is GitHub and create tutorials for absolute beginners.
+  number: E3
+
+- category: Code
+  topic: Problem Solving
+  description: Solve five problem solving challenges in Hackerrank platform.
+  number: C4
+
+- category: Design
+  topic: 3D Modeling
+  description: Create a 3D model of the Ananda Viharaya for ACICTS Digital Art Portal.
+  number: D4
+
+- category: Explore
+  topic: Innovating
+  description: Pitch a new project for ACICTS and create documentation of the project proposal.
+  number: E4
+
+- category: Code
+  topic:  Visual Programming
+  description: Build up a good game with Scratch to show on BITS projects site.
+  number: C5
+  simple: true
+
+- category: Design
+  topic: Logo Designing
+  description: Design a logo for BITS 2020 to show on BITS projects site.
+  number: D5
+  simple: true
+
+- category: Explore
+  topic: Getting Started with GitHub
+  description: Create a GitHub account, learn the basics of cmd and git bash.
+  number: E5
+  simple: true
+
+- category: Code
+  topic: FOSS Developing
+  description: Create a project, deploy it to GitHub and maintain it.
+  number: C6
+
+- category: Design
+  topic: Promotion Designing
+  description: Design promotion items(Sticker, T-shirt, Poster and Flier) for BITS.
+  number: D6
+
+- category: Explore
+  topic: Bug Finding
+  description: Findout a bug of our ACICTS projects and report it via GitHub.
+  number: E6
+
+- category: Code
+  topic: Programming
+  description: Programme a simple AI which answers pre-defined simple questions.
+  number: C7
+
+- category: Design
+  topic: Animating
+  description: Design an animation showing Industrial Revolution (Before & After).
+  number: D7
+
+- category: Explore
+  topic: Documentation
+  description: Create a document for newcoming BITS contestants to get started.
+  number: E7
+
+- category: Code
+  topic: Encoding & Decoding
+  description: Try to decode given text and encode given paragraph.
+  number: C8
+  simple: true
+
+- category: Design
+  topic: Cover Designing
+  description: Design a cover page to be featured on a BITS 19 Souvenir book.
+  number: D8
+  simple: true
+
+- category: Explore
+  topic: Self Studying
+  description: Complete the Codecademy course on HTML & CSS and design a small website.
+  number: E8
+  simple: true

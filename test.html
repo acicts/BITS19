@@ -1,0 +1,160 @@
+---
+layout: dash
+title: BITS 19 - Online Test
+---
+
+<script type="text/javascript">
+  var date = "June 1, 2019 12:00:00 AM";
+</script>
+
+<div class="main-panel">
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg  navbar-sticky fixed-top " id="navigation-example" style="background:blue;">
+    <div class="container-fluid">
+      <div class="navbar-wrapper">
+        <div class="navbar-brand">Online Test</div>
+        <i class="material-icons" style="font-size:100%; position: relative; color:#a9afbbd1;">update</i>
+        <h6>
+          <div id="lastsync" style="position:absolute; color:#a9afbbd1;"></div>
+          <h6>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+        aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end">
+        <!--form class="navbar-form">
+          <div class="input-group no-border">
+            <div class="search-icon">
+              <i class="material-icons">search</i>
+              <div class="ripple-container"></div>
+            </div>
+            <input type="text" value="" id="myInput" onkeyup="myFunction()" class="form-control"
+              placeholder="Search...">
+          </div-->
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./">
+              <i class="material-icons">home</i>
+              <p class="d-lg-none d-md-block">
+                Home Page
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <div class="content" style="margin-top: -12px !important;">
+
+    <div class="container-fluid">
+
+      <div class="row" id="myUL">
+        {% for test in site.data.test %}
+        <div class="col-xl-4 col-md-12 filterDiv">
+          <div class="card card-chart task-card">
+            <a href="{{ test.link }}" target="_blank">
+            <div class="card-header
+              {% if test.category == 'OT' %}card-header-primary{% endif %}
+              {% if test.category == 'HR' %}card-header-success{% endif %}">
+              <h6>
+                  {% if test.simple == true %}
+                   <div class="card-new">
+                     FOR GRADE 6,7,8
+                     </div>
+                  {% else %}
+                   <div class="card-new">
+                     FOR GRADE 9,10,11
+                     </div>
+                  {% endif %}
+
+                  <div class="card-new2">
+                      {% if test.category == 'OT' %}
+                      Online Test
+                      {% else %}
+                      Hackerrank Test
+                      {% endif %}                      
+                      </div>
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="card-new3">
+                 <div class="card-text" style="font-size:200%;"><div style="font-family:'Saira', sans-serif;  color: #b5caff; display:inline;">
+                    {{ test.date }}
+                 </div></div>
+                    
+              <span class="{% if test.category == 'OT' %}text-primary{% endif %}
+              {% if test.category == 'HR' %}text-success{% endif %}"></span>
+              <h4 class="card-title">{{ test.topic }}</h4>          
+              </div>
+              {% if test.text == 'not' %}
+              <p class="card-category text-danger" style="text-align:center">The test is not started.</p>        
+              {% endif %}  
+              {% if test.text == 'go' %}
+              <p class="card-category text-warning" style="text-align:center">The test is going on.</p>
+              {% endif %}  
+              {% if test.text == 'ok' %}
+              <p class="card-category text-success" style="text-align:center">The test is finished.</p>
+              {% endif %}  
+            </div>
+            <div style="display:block; padding-left:20px; opacity:0.25">
+              <small>Click on the card to see visit test. </small>
+              </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons" >content_paste</i>
+              On - {{ test.date }} at 7PM to next day 7AM.
+              </div>
+            </div>
+
+            
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+
+  <style>
+    .card-new{
+      padding: 5px;
+      background-color:#1f294038;
+      border-radius: 10px;
+      border-left: 5px solid #1a203485;
+      margin-bottom: 0;
+      top: 6px;
+      left:10px;
+      position: absolute;
+    }
+    .card-new2{
+      padding: 5px;
+      background-color:#595d6694;
+      border-radius: 10px;
+      border-left: 5px solid #1a2034;
+      border-right: 5px solid #1a2034;
+      text-align: center;
+      margin-bottom: 0;
+      top: 6px;
+      right:10px;
+      position: absolute;
+    }
+    .card-new3{
+      padding: 5px;
+      background-color:#595d6694;
+      border-radius: 10px;
+      border-left: 5px solid #1a2034;
+      border-right: 5px solid #1a2034;
+      text-align: center;
+      margin-bottom: 0;
+      top: 6px;
+    }
+  </style>

@@ -1,0 +1,139 @@
+---
+layout: dash
+title: BITS 19 - Leaderboards
+---
+
+<script type="text/javascript">
+  var date = "June 1, 2019 12:00:00 AM";
+</script>
+
+<div class="main-panel">
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg  navbar-sticky fixed-top " id="navigation-example" style="background:blue;">
+    <div class="container-fluid">
+      <div class="navbar-wrapper">
+        <div class="navbar-brand">Leaderboards</div>
+        <i class="material-icons" style="font-size:100%; position: relative; color:#a9afbbd1;">update</i>
+        <h6>
+          <div id="lastsync" style="position:absolute; color:#a9afbbd1;"></div>
+          <h6>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+        aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./">
+              <i class="material-icons">home</i>
+              <p class="d-lg-none d-md-block">
+                Home Page
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <div class="content" style="margin-top: -12px !important;">
+
+      <div class="container-fluid">
+        <div class="row first">
+            <div class="col-md-12">
+            <a class="btn btn-primary mb-4" href="https://docs.google.com/spreadsheets/d/1t2_HHLkibAybPORmXuDDEFEyetC3p7r1blQRpjzinXg/edit?usp=sharing" role="button" target="_blank">Leaderboards sheet</a>
+              </div>
+        </div>
+  
+        <div class="row" id="myUL">
+          <div class="col-md-12">
+              <table class="table table bordered table-striped" id="myTable">
+                  <!-- Table head -->
+                  <thead>
+                    <tr>
+                      <a onclick="sortTable">
+                        <th>Name</th>
+                        </a>
+                        <th>Class</th>
+                        <th>Marks</th>
+                    </tr>
+                  </thead>
+                  <!-- Table head -->
+                  
+                  <!-- Table body -->
+                  <tbody>
+                      {% for name in site.data.leaderboard %}
+                      <tr>
+                        <td>{{ name.name }}</td>
+                        <td>{{ name.class }}</td>
+                        <td>{{ name.marks }}</td>
+                      </tr>
+                      {% endfor %}
+                  </tbody>
+                  <!-- Table body -->
+              
+                </table>
+                </div>
+        </div>
+  
+      </div>
+    </div>
+  <!---->
+
+
+<style>
+tr:nth-child(even) {
+  background-color: #253f7b;
+}
+tbody>tr:nth-of-type(odd) {
+    background-color: #1f2940 !important;
+}
+thead>tr{
+  background: linear-gradient(60deg, #2196f3, #006dc3);
+}
+thead>tr th{
+  color: white !important;
+}
+</style>
+<script>
+function sortTableloads() {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById("myTable");
+  switching = true;
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[2];
+      y = rows[i + 1].getElementsByTagName("TD")[2];
+      //check if the two rows should switch place:
+      if (Number(x.innerHTML) < Number(y.innerHTML)) {
+        //if so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+
+</script>

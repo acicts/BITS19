@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="./assets/img/BITS-ICON.PNG">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    BITS 2019 - Register
+  </title>
+
+  <!-- -->
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="./assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="./assets/demo/demo.css" rel="stylesheet" />
+  <!-- -->
+
+
+  <!-- jQuery and Bootstrap JS -->
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <!-- BootstrapValidator JS -->
+  <script type="text/javascript"
+    src="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>
+
+</head>
+
+<body class="dark-edition" style="font-family:'Saira', sans-serif;">
+<style>
+  @media (max-width: 991px){
+.main-panel{
+      margin-top: -75px !important;
+}
+}
+@media (min-width: 991px){
+  .main-panel{
+      left: -250px !important;
+    }
+  }
+</style>
+
+  <div class="main-panel">
+
+
+    <!-- -->
+    <div class="content" style="padding-left: 0; padding-right: 0; width:100%; margin:auto;">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-10">
+            <div class="card">
+              <div class="card-header card-header-primary">
+                  <img src="../BITS-logo.GIF" style="width:150px; height: 150px; position: static;  filter: invert(1); -webkit-filter: invert(100%);
+                  -moz-filter: invert(100%);
+                -ms-filter: invert(100%);
+                -o-filter: invert(100%);
+                filter: invert(100%); top:0px;">
+                <h4 class="card-title" style="font-family:'Saira', sans-serif;">BITS 19 - Registration</h4>
+                <div id="reginfo">
+                <p class="card-category" style="font-family:'Saira', sans-serif;">You must complete following form before you enter into
+                    the competition. You'll get an Identification number
+                    after filling the form; and we will use it to uniquely
+                    identify you in the competition. When submitting
+                    tasks you need to input your id number. <div class="text-warning" style="font-weight: 900; display: block;">
+                      So it will be very important to write down and keep your ID number with you!
+                    </div> After filling this form, you cannot
+                    change it. <div style="font-weight: 1000; display: inline-block">So be careful</div> when you enter your information. If you have any
+                    doubts, feel free to contact us via our
+                    contact numbers from the Contact Us page</p>
+                    </div>
+              </div>
+              <div class="card-body">
+
+                <form class="form-horizontal" role="form" id="test-form" style="margin-top:20px;">
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="control-label">Fist Name</label>
+                        <div class="input-group inputGroupContainer">
+                          <input type="text" class="form-control name" name="firstName" placeholder="First Name" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="control-label">Last Name</label>
+                        <div class="input-group inputGroupContainer">
+                          <input type="text" class="form-control name" name="lastName" placeholder="Lastname">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="control-label">User Name</label>
+                        <div class="input-group inputGroupContainer">
+                          <input type="text" class="form-control" name="userName" maxlength="10" placeholder="userName" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="control-label">Birth Day</label>
+                        <div class="input-group inputGroupContainer" style="text-align: center;">
+                          <input type="text" class="form-control" name="birthDay" maxlength="10" placeholder="dd/mm/yyyy" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <style>
+                    input .name {
+                      text-transform: capitalize;
+                    }
+
+                    input[type="date"]::-webkit-inner-spin-button,
+                    input[type="date"]::-webkit-calendar-picker-indicator {
+                      display: none;
+                      -webkit-appearance: none;
+                    }
+
+                    input[type="date"]::-webkit-clear-button {
+                      display: none;
+                      -webkit-appearance: none;
+                    }
+
+                    input[type="date"]::-moz-inner-spin-button,
+                    input[type="date"]::-moz-calendar-picker-indicator {
+                      display: none;
+                      -moz-appearance: none;
+                    }
+
+                    input[type="date"]::-moz-clear-button {
+                      display: none;
+                      -moz-appearance: none;
+                    }
+
+                    input[type="date"]:-ms-input-inner-spin-button,
+                    input[type="date"]:-ms-input-calendar-picker-indicator {
+                      display: none;
+                      -ms-input-appearance: none;
+                    }
+
+                    input[type="date"]:-ms-input-clear-button {
+                      display: none;
+                      -ms-input-appearance: none;
+                    }
+
+                    input[type="date"]::inner-spin-button,
+                    input[type="date"]::calendar-picker-indicator {
+                      display: none;
+                      appearance: none;
+                    }
+
+                    input[type="date"]::clear-button {
+                      display: none;
+                      appearance: none;
+                    }
+                  </style>
+
+                  <hr>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="control-label">Email</label>
+                        <div class="input-group inputGroupContainer">
+                          <input type="text" class="form-control" name="email" placeholder="example@domain.com" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="control-label">Mobile Number</label>
+                        <div class="input-group inputGroupContainer">
+                          <input type="text" class="form-control" name="mobile" maxlength="10" placeholder="07XXXXXXXX" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-10">
+                      <div class="form-group">
+                        <label class="control-label">Address</label>
+                        <div class="input-group inputGroupContainer">
+                          <input type="text" class="form-control" name="address" placeholder="Number, Lane, City." />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <hr>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="control-label">Grade & Class</label>
+                        <div class="input-group inputGroupContainer">
+                          <input type="text" class="form-control" name="grade" maxlength="5" placeholder="06-01" id="clsnum" onkeyup="clsnumber()"/>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="control-label">Class Register number<small></small></label>
+                        <div class="input-group inputGroupContainer">
+                          <input type="text" class="form-control" name="register" maxlength="2" placeholder="01" id="clsregnum" onkeyup="clsregnumber()"/>
+                        </div>
+                      </div>
+                    </div>
+
+                    <hr/>
+                    <div class="col-md-6" style="display:none">
+                      <div class="form-group">
+                        <label class="control-label">Identification number<small></small></label>
+                        <div class="input-group inputGroupContainer">
+                          <input type="text" class="form-control" name="idnum" id="identifynum"/>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  <script>
+                    now = new Date();
+                    var min=1000;
+                    var max=9999;
+                    var x =0;
+                    var y =0;
+
+                    randomNum = '';
+                    randomNum = Math.floor(Math.random() * (+max - +min)) + +min;
+
+                    function clsregnumber() {
+                      x = ((document.getElementById("clsregnum").value).replace(/\D/g,'')).substring(0, 2);
+                      document.getElementById("identifynum").value = y.toString() + x.toString() + randomNum.toString();
+                    }
+                    function clsnumber() {
+                      y = ((document.getElementById("clsnum").value).replace(/\D/g,'')).substring(0, 4);
+                      document.getElementById("identifynum").value = y.toString() + x.toString() + randomNum.toString();
+                    }
+
+                    function registranumber() {
+                      document.getElementById("txt_usrid").style.display= "block";
+                      document.getElementById("checkmark").style.display= "block";
+                      document.getElementById("success-txt").style.display= "block";
+                      document.getElementById("postForm").style.display= "none";
+                      document.getElementById("test-form").style.display= "none";
+                      document.getElementById("reginfo").style.display= "none";
+                      document.getElementById("txt_usrid").innerHTML = "Your Identification Number is : " + y.toString() + x.toString() + randomNum.toString();
+                      document.getElementById("notice").style.display = "block";
+
+
+                    }
+                  </script>
+
+                </div>
+
+                  <div class="form-group">
+                    <div class="col-md-6 col-lg-offset-3">
+                      <button type="submit" class="btn btn-primary" id="postForm">Submit</button>
+                    </div>
+                  </div>
+
+                </form>
+
+                  <div class="checkmark" style="display:none" id="checkmark">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px" y="0px" viewBox="0 0 161.2 161.2" enable-background="new 0 0 161.2 161.2" xml:space="preserve">
+                      <circle class="circle" fill="none" stroke="#33b057" stroke-width="7" stroke-miterlimit="10" cx="80.6" cy="80.6"
+                        r="62.1"></circle>
+                      <polyline class="icon" fill="none" stroke="#33b057" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10"
+                        points="113,52.8 74.1,108.4 48.2,86.4"></polyline>
+                    </svg>
+                  </div>
+
+                  <div class="text-center text-success success" style="display:none" id="success-txt"><h2 style="margin-top: -28px;">Success</h2></div>
+
+                  <style>
+                    .checkmark {
+                      width: 170px;
+                      margin: 0 auto;
+
+                      margin-top: -55 px;
+                    }
+
+                    .circle {
+                      -moz-animation-name: circle-animation;
+                      -webkit-animation-name: circle-animation;
+                      animation-name: circle-animation;
+                      -moz-animation-duration: 2s;
+                      -webkit-animation-duration: 2s;
+                      animation-duration: 2s;
+                      -moz-animation-timing-function: ease-in-out;
+                      -webkit-animation-timing-function: ease-in-out;
+                      animation-timing-function: ease-in-out;
+                      stroke-dasharray: 1000;
+                      stroke-dashoffset: 0;
+                    }
+
+                    .success{
+                      -moz-animation-name: success-animation;
+                      -webkit-animation-name: success-animation;
+                      animation-name: success-animation;
+                      -moz-animation-duration: 1s;
+                      -webkit-animation-duration: 1s;
+                      animation-duration: 1s;
+                      -moz-animation-timing-function: ease-in-out;
+                      -webkit-animation-timing-function: ease-in-out;
+                      animation-timing-function: ease-in-out;
+                    }
+
+                    .icon {
+                      -moz-animation-name: icon-animation;
+                      -webkit-animation-name: icon-animation;
+                      animation-name: icon-animation;
+                      -moz-animation-duration: 1s;
+                      -webkit-animation-duration: 1s;
+                      animation-duration: 1s;
+                      -moz-animation-timing-function: ease-in-out;
+                      -webkit-animation-timing-function: ease-in-out;
+                      animation-timing-function: ease-in-out;
+                      opacity: 1;
+                    }
+
+                    @keyframes circle-animation {
+                      0% {
+                        stroke-dashoffset: 1000;
+                        opacity: 0.5;
+                      }
+
+                      100% {
+                        stroke-dashoffset: 0;
+                        opacity: 1;
+                      }
+                    }
+
+                    @keyframes icon-animation {
+                      0% {
+                        opacity: 0;
+                      }
+
+                      50% {
+                        opacity: 0;
+                      }
+
+                      100% {
+                        opacity: 1;
+                      }
+                    }
+                    @keyframes success-animation {
+                      0% {
+                        opacity: 0;
+                      }
+
+                      50% {
+                        opacity: 0;
+                      }
+
+                      100% {
+                        opacity: 1;
+                      }
+                    }
+                  </style>
+                  <h3 id="txt_usrid" style="color:white; background: #344261; display:none; text-align:center; margin-top: -3px;"></h3>
+                  <h5 id="notice" style="color:white; margin-bottom: 25px; display:none; text-align:center; margin-top: -10px; color: #ff5551">
+
+                      Please write down and keep your ID number with you!!!</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footernew class= "footer">
+            <div class="container-fluid">
+              <nav class="float-left">
+                  <ul>
+                      <li>
+                        <a href="https://acicts.io">
+                          ACICTS
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./about.html">
+                          About
+                        </a>
+                      </li>
+                      <!--li>
+                        <a href="">
+                          ACICTS Blogs
+                        </a>
+                      </li-->
+                      <li>
+                        <a href="./contact.html">
+                          Contact Us
+                        </a>
+                      </li>
+                    </ul>
+              </nav>
+
+              <div class="copyright float-right"  style="color: #b5caff">
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear())
+                </script>
+                <a href="http://acicts.io/" target="_blank">ACICTS</a>  - All rights reserved.
+              </div>
+            </div>
+          </footernew>
+        </div>
+
+        <style>
+          footernew{
+            position: fixed;
+        bottom: 0px;
+        background: #00000099;
+        width: 100%;
+        height: 51px;
+        padding: 0px !important;
+        padding-bottom: 20px;
+        left: 0px;
+        z-index:10
+          }
+        </style>
+      </div>
+    </div>
+    <!-- -->
+
+    <div class="container">
+
+
+    </div>
+    <script>
+      $(document).ready(function () {
+        $('#test-form').bootstrapValidator({
+            //submitButtons: '#postForm',
+            // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+            feedbackIcons: {
+              valid: 'glyphicon glyphicon-ok',
+              invalid: 'glyphicon glyphicon-remove',
+              validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+              firstName: {
+                message: 'Your input is not valid!',
+                validators: {
+                  notEmpty: {
+                    message: 'This field is required!'
+                  }
+                }
+              },
+              lastName: {
+                message: 'Your input is not valid!',
+                validators: {
+                  notEmpty: {
+                    message: 'This field is required!'
+                  }
+                }
+              },
+              userName: {
+                message: 'Your input is not valid!',
+                validators: {
+                  notEmpty: {
+                    message: 'This field is required!'
+                  },
+                  stringLength: {
+                    min: 2,
+                    max: 10,
+                    message: 'Between 2 and 10 characters only!'
+                  },
+                  regexp: {
+                    regexp: /^[A-z0-9]+$/,
+                    message: 'Letters and numbers only!'
+                  }
+                }
+              },
+              birthDay: {
+                validators: {
+                  notEmpty: {
+                    message: 'This field is required!'
+                  },
+                  regexp: {
+                    regexp: /^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)(((2)(0)(0)[2-8]))$/,
+                    message: 'Between age 10-17 only! or check your date format!'
+                  }
+                }
+              },
+              email: {
+                validators: {
+                  notEmpty: {
+                    message: 'This field is required!'
+                  },
+                  emailAddress: {
+                    message: 'Invalid email address!'
+                  }
+                }
+              },
+              address: {
+                message: 'Your input is not valid!',
+                validators: {
+                  notEmpty: {
+                    message: 'This field is required!'
+                  }
+                }
+              },
+              mobile: {
+                validators: {
+                  notEmpty: {
+                    message: 'This field is required!'
+                  },
+                  regexp: {
+                    regexp: /^(0)\d{9}$/,
+                    message: 'Invalid mobile number!'
+                  }
+                }
+              },
+              grade: {
+                validators: {
+                  notEmpty: {
+                    message: 'This field is required!'
+                  },
+                  regexp: {
+                    regexp: /^(((0)[6-9])|((1)[0-1]))-(((0)[1-9])|((1)[0-1]))$/,
+                    message: 'Grade 6-11 only! or invalid class number!'
+                  }
+                }
+              },
+              register: {
+                validators: {
+                  notEmpty: {
+                    message: 'This field is required!'
+                  },
+                  regexp: {
+                    regexp: /^([0-5][0-9])$/,
+                    message: 'Invalid class register number!'
+                  }
+                }
+              },
+            }
+          })
+          .on('success.form.bv', function (e) {
+            // Prevent form submission
+            e.preventDefault();
+
+            // Get the form instance
+            var $form = $(e.target);
+
+            // Get the BootstrapValidator instance
+            var bv = $form.data('bootstrapValidator');
+
+            // Use Ajax to submit form data
+            var url =
+              'https://script.google.com/macros/s/AKfycbycovfZr4ZC_kYiqnhGajk90FSMG79hjmMm0Xx5M-0qcs_vjr6d/exec';
+
+            // show the loading
+            $('#postForm').prepend($('<span></span>').addClass(
+              'glyphicon glyphicon-refresh glyphicon-refresh-animate'));
+            var jqxhr = $.post(url, $form.serialize(), function (data) {
+                console.log("Success! Data: " + data.statusText);
+                registranumber()
+              })
+              .fail(function (data) {
+                console.warn("Error! Data: " + data.statusText);
+                // HACK - check if browser is Safari - and redirect even if fail b/c we know the form submits.
+                if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+                  //alert("Browser is Safari -- we get an error, but the form still submits -- continue.");
+                  registranumber()
+                }
+              });
+          });
+      });
+
+
+
+
+    </script>
+
+    <style>
+    .inputGroupContainer{
+      margin-top: 10px;
+    }
+    </style>
+
+
+</body>
+
+
+<script src="../assets/js/core/popper.min.js"></script>
+<script src="../assets/js/core/bootstrap-material-design.min.js"></script>
+<script src="https://unpkg.com/default-passive-events"></script>
+<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Chartist JS -->
+<script src="./assets/js/plugins/chartist.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="./assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="./assets/js/material-dashboard.js?v=2.1.0"></script>
+<script src="./assets/demo/demo.js"></script>
+<script src="./assets/scripts/main.js"></script>
+</body>
+
+<footer>
+  <script src="validation-functions.js"></script>
+</footer>
+
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="./assets/img/BITS-ICON.PNG">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    BITS 19 - Online Test
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="./assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="./assets/demo/demo.css" rel="stylesheet" />
+  <style>
+    .filterDiv {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+
+<body class="dark-edition" style="font-family:'Saira', sans-serif;" onload="sortTableloads()">
+
+  <div class="wrapper">
+
+  <div class="sidebar" data-color="azure" data-background-color="black" data-image="../assets/img/sidebar-1.jpg">
+    <div class="logo">
+      <a href="" class="simple-text logo-normal">
+        <img src="../BITS-logo.GIF" style="width:150px; height: 150px; position: static;  filter: invert(1); -webkit-filter: invert(100%);
+          -moz-filter: invert(100%);
+        -ms-filter: invert(100%);
+        -o-filter: invert(100%);
+        filter: invert(100%); top:0px;">
+      </a>
+    </div>
+    <div class="sidebar-wrapper">
+      <ul class="nav">
+
+        <li class="nav-item ">
+          <a class="nav-link" href="./tasks.html">
+            <i class="material-icons">view_module</i>
+            <p>Tasks</p>
+          </a>
+        </li>
+
+        <!--li class="nav-item ">
+          <a class="nav-link" href=". l">
+            <i class="material-icons">location_ons</i>
+            <p>Tutorials</p>
+          </a>
+        </li-->
+
+        <li class="nav-item  active ">
+          <a class="nav-link" href="./test.html">
+            <i class="material-icons">library_books</i>
+            <p>Online Test</p>
+          </a>
+        </li>
+
+        <li class="nav-item ">
+          <a class="nav-link" href="./timeline.html">
+            <i class="material-icons">timeline</i>
+            <p>Timeline</p>
+          </a>
+        </li>
+
+        <li class="nav-item ">
+          <a class="nav-link" href="./leaderboard.html">
+            <i class="material-icons">content_paste</i>
+            <p>Leaderboards</p>
+          </a>
+        </li>
+
+        <li class="nav-item ">
+          <a class="nav-link" href="./contact.html">
+            <i class="material-icons">chat</i>
+            <p>Contact Us</p>
+          </a>
+        </li>
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="./about.html">
+            <i class="material-icons">info</i>
+            <p>About</p>
+          </a>
+        </li>
+
+
+      </ul>
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+  var date = "June 1, 2019 12:00:00 AM";
+</script>
+
+<div class="main-panel">
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg  navbar-sticky fixed-top " id="navigation-example" style="background:blue;">
+    <div class="container-fluid">
+      <div class="navbar-wrapper">
+        <div class="navbar-brand">Online Test</div>
+        <i class="material-icons" style="font-size:100%; position: relative; color:#a9afbbd1;">update</i>
+        <h6>
+          <div id="lastsync" style="position:absolute; color:#a9afbbd1;"></div>
+          <h6>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+        aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end">
+        <!--form class="navbar-form">
+          <div class="input-group no-border">
+            <div class="search-icon">
+              <i class="material-icons">search</i>
+              <div class="ripple-container"></div>
+            </div>
+            <input type="text" value="" id="myInput" onkeyup="myFunction()" class="form-control"
+              placeholder="Search...">
+          </div-->
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./">
+              <i class="material-icons">home</i>
+              <p class="d-lg-none d-md-block">
+                Home Page
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <div class="content" style="margin-top: -12px !important;">
+
+    <div class="container-fluid">
+
+      <div class="row" id="myUL">
+        
+        <div class="col-xl-4 col-md-12 filterDiv">
+          <div class="card card-chart task-card">
+            <a href="" target="_blank">
+            <div class="card-header
+              card-header-primary
+              ">
+              <h6>
+                  
+                   <div class="card-new">
+                     FOR GRADE 6,7,8
+                     </div>
+                  
+
+                  <div class="card-new2">
+                      
+                      Online Test
+                                            
+                      </div>
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="card-new3">
+                 <div class="card-text" style="font-size:200%;"><div style="font-family:'Saira', sans-serif;  color: #b5caff; display:inline;">
+                    14.06.2019
+                 </div></div>
+                    
+              <span class="text-primary
+              "></span>
+              <h4 class="card-title">First Online Test</h4>          
+              </div>
+                
+              
+              <p class="card-category text-warning" style="text-align:center">The test is going on.</p>
+                
+                
+            </div>
+            <div style="display:block; padding-left:20px; opacity:0.25">
+              <small>Click on the card to see visit test. </small>
+              </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons" >content_paste</i>
+              On - 14.06.2019 at 7PM to next day 7AM.
+              </div>
+            </div>
+
+            
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-xl-4 col-md-12 filterDiv">
+          <div class="card card-chart task-card">
+            <a href="" target="_blank">
+            <div class="card-header
+              card-header-primary
+              ">
+              <h6>
+                  
+                   <div class="card-new">
+                     FOR GRADE 6,7,8
+                     </div>
+                  
+
+                  <div class="card-new2">
+                      
+                      Online Test
+                                            
+                      </div>
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="card-new3">
+                 <div class="card-text" style="font-size:200%;"><div style="font-family:'Saira', sans-serif;  color: #b5caff; display:inline;">
+                    14.06.2019
+                 </div></div>
+                    
+              <span class="text-primary
+              "></span>
+              <h4 class="card-title">First Online Test</h4>          
+              </div>
+                
+                
+              
+              <p class="card-category text-success" style="text-align:center">The test is finished.</p>
+                
+            </div>
+            <div style="display:block; padding-left:20px; opacity:0.25">
+              <small>Click on the card to see visit test. </small>
+              </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons" >content_paste</i>
+              On - 14.06.2019 at 7PM to next day 7AM.
+              </div>
+            </div>
+
+            
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-xl-4 col-md-12 filterDiv">
+          <div class="card card-chart task-card">
+            <a href="" target="_blank">
+            <div class="card-header
+              card-header-primary
+              ">
+              <h6>
+                  
+                   <div class="card-new">
+                     FOR GRADE 6,7,8
+                     </div>
+                  
+
+                  <div class="card-new2">
+                      
+                      Online Test
+                                            
+                      </div>
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="card-new3">
+                 <div class="card-text" style="font-size:200%;"><div style="font-family:'Saira', sans-serif;  color: #b5caff; display:inline;">
+                    14.06.2019
+                 </div></div>
+                    
+              <span class="text-primary
+              "></span>
+              <h4 class="card-title">First Online Test</h4>          
+              </div>
+              
+              <p class="card-category text-danger" style="text-align:center">The test is not started.</p>        
+                
+                
+                
+            </div>
+            <div style="display:block; padding-left:20px; opacity:0.25">
+              <small>Click on the card to see visit test. </small>
+              </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons" >content_paste</i>
+              On - 14.06.2019 at 7PM to next day 7AM.
+              </div>
+            </div>
+
+            
+            </a>
+          </div>
+        </div>
+        
+        <div class="col-xl-4 col-md-12 filterDiv">
+          <div class="card card-chart task-card">
+            <a href="" target="_blank">
+            <div class="card-header
+              
+              card-header-success">
+              <h6>
+                  
+                   <div class="card-new">
+                     FOR GRADE 6,7,8
+                     </div>
+                  
+
+                  <div class="card-new2">
+                      
+                      Hackerrank Test
+                                            
+                      </div>
+                </h6>
+            </div>
+            <div class="card-body">
+                <div class="card-new3">
+                 <div class="card-text" style="font-size:200%;"><div style="font-family:'Saira', sans-serif;  color: #b5caff; display:inline;">
+                    21.06.2019
+                 </div></div>
+                    
+              <span class="
+              text-success"></span>
+              <h4 class="card-title">Hackerrank Test</h4>          
+              </div>
+              
+              <p class="card-category text-danger" style="text-align:center">The test is not started.</p>        
+                
+                
+                
+            </div>
+            <div style="display:block; padding-left:20px; opacity:0.25">
+              <small>Click on the card to see visit test. </small>
+              </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons" >content_paste</i>
+              On - 21.06.2019 at 7PM to next day 7AM.
+              </div>
+            </div>
+
+            
+            </a>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+
+  <style>
+    .card-new{
+      padding: 5px;
+      background-color:#1f294038;
+      border-radius: 10px;
+      border-left: 5px solid #1a203485;
+      margin-bottom: 0;
+      top: 6px;
+      left:10px;
+      position: absolute;
+    }
+    .card-new2{
+      padding: 5px;
+      background-color:#595d6694;
+      border-radius: 10px;
+      border-left: 5px solid #1a2034;
+      border-right: 5px solid #1a2034;
+      text-align: center;
+      margin-bottom: 0;
+      top: 6px;
+      right:10px;
+      position: absolute;
+    }
+    .card-new3{
+      padding: 5px;
+      background-color:#595d6694;
+      border-radius: 10px;
+      border-left: 5px solid #1a2034;
+      border-right: 5px solid #1a2034;
+      text-align: center;
+      margin-bottom: 0;
+      top: 6px;
+    }
+  </style>
+
+
+  <a href="./registerpopup.html" target="blank">
+    <div class="card comes"
+      style="width:350px; position: fixed; bottom:40px; right:20px; transition: 1s; z-index: 5; background-color: #2f89ff; cursor: pointer;">
+      <div class="card-body">
+        <h4 class="card-title not-reg" style="color: #b5caff"></h4>
+      </div>
+    </div>
+  </a>
+  <style>
+    .comes:hover{
+      background-color: #115bbb !important;
+    }
+    .not-reg{
+      text-align: center;
+      font-weight: 700;
+    }
+    .not-reg::after {
+      content: 'Not registered yet? Click on me';
+    }
+  </style>
+
+<script src="https://embed.small.chat/THVNC49UHGJ4700NF8.js" async></script>
+  <footer class= "footer" style="margin-bottom:10px">
+  <div class="container-fluid">
+    <nav class="float-left">
+      <ul>
+        <li>
+          <a href="https://acicts.io">
+            ACICTS
+          </a>
+        </li>
+        <li>
+          <a href="./about.html">
+            About
+          </a>
+        </li>
+        <!--li>
+          <a href="">
+            ACICTS Blogs
+          </a>
+        </li-->
+        <li>
+          <a href="./contact.html">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="copyright float-right"  style="color: #b5caff">
+      &copy;
+      <script>
+        document.write(new Date().getFullYear())
+      </script>
+      <a href="http://acicts.io/" target="_blank">ACICTS</a>  - All rights reserved.
+    </div>
+
+  </div>
+</footer>
+<!--This Website is created by Supun Tharinda-->
+<!--   Core JS Files   -->
+
+<script src="../assets/js/core/jquery.min.js"></script>
+<script src="../assets/js/core/popper.min.js"></script>
+<script src="../assets/js/core/bootstrap-material-design.min.js"></script>
+<script src="https://unpkg.com/default-passive-events"></script>
+<script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!--  Google Maps Plugin    -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+<!-- Chartist JS -->
+<script src="./assets/js/plugins/chartist.min.js"></script>
+<!--  Notifications Plugin    -->
+<script src="./assets/js/plugins/bootstrap-notify.js"></script>
+<!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+<script src="./assets/js/material-dashboard.js?v=2.1.0"></script>
+<script src="./assets/demo/demo.js"></script>
+<script src="./assets/scripts/main.js"></script>
+
+
+  </div>
+</body>
+
+</html>

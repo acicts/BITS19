@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="./assets/img/BITS-ICON.PNG">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    {{page.title}}
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link href="https://fonts.googleapis.com/css?family=Saira" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="./assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="./assets/demo/demo.css" rel="stylesheet" />
+  <style>
+    .filterDiv {
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+  </style>
+</head>
+
+<body class="dark-edition" style="font-family:'Saira', sans-serif;" onload="sortTableloads()">
+
+  {% include sidebar.html %}
+
+  {{content}}
+
+  <a href="./registerpopup.html" target="blank">
+    <div class="card comes"
+      style="width:350px; position: fixed; bottom:40px; right:20px; transition: 1s; z-index: 5; background-color: #2f89ff; cursor: pointer;">
+      <div class="card-body">
+        <h4 class="card-title not-reg" style="color: #b5caff"></h4>
+      </div>
+    </div>
+  </a>
+  <style>
+    .comes:hover{
+      background-color: #115bbb !important;
+    }
+    .not-reg{
+      text-align: center;
+      font-weight: 700;
+    }
+    .not-reg::after {
+      content: 'Not registered yet? Click on me';
+    }
+  </style>
+
+<script src="https://embed.small.chat/THVNC49UHGJ4700NF8.js" async></script>
+  {% include footer.html %}
+
+  </div>
+</body>
+
+</html>
