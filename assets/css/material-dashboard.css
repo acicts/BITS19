@@ -2207,17 +2207,19 @@ pre code {
 
 .form-control {
   display: block;
-  width: 100%;
   padding: 0.4375rem 0;
   font-size: 1rem;
   line-height: 1.5;
   color: #495057;
+  margin-left: 10px;
+  margin-right: -15px;
   background-color: transparent;
   background-clip: padding-box;
   border: 1px solid #d2d2d2;
   border-radius: 0;
   box-shadow: none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-image: linear-gradient(to top, #ffffff 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, rgba(180, 180, 180, 0.1) 1px, rgba(180, 180, 180, 0) 1px) !important;
 }
 
 .form-control::-ms-expand {
