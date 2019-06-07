@@ -32,7 +32,76 @@
 
 <body class="dark-edition" style="font-family:'Saira', sans-serif;" onload="sortTableloads()">
 
-  {% include sidebar.html %}
+  <!---->
+  <div class="wrapper">
+
+    <div class="sidebar" data-color="azure" data-background-color="black" data-image="./assets/img/sidebar-1.jpg">
+      <div class="logo">
+        <a href="" class="simple-text logo-normal">
+          <img src="./BITS-logo.GIF" style="width:150px; height: 150px; position: static;  filter: invert(1); -webkit-filter: invert(100%);
+            -moz-filter: invert(100%);
+          -ms-filter: invert(100%);
+          -o-filter: invert(100%);
+          filter: invert(100%); top:0px;">
+        </a>
+      </div>
+      <div class="sidebar-wrapper">
+        <ul class="nav">
+  
+          <li class="nav-item {% if page.url == "./tasks.html" %} active {% endif %}">
+            <a class="nav-link" href="./tasks.html">
+              <i class="material-icons">view_module</i>
+              <p>Tasks</p>
+            </a>
+          </li>
+  
+          <!--li class="nav-item ">
+            <a class="nav-link" href=". l">
+              <i class="material-icons">location_ons</i>
+              <p>Tutorials</p>
+            </a>
+          </li-->
+  
+          <li class="nav-item {% if page.url == "./test.html" %} active {% endif %}">
+            <a class="nav-link" href="./test.html">
+              <i class="material-icons">library_books</i>
+              <p>Online Test</p>
+            </a>
+          </li>
+  
+          <li class="nav-item {% if page.url == "./timeline.html" %} active {% endif %}">
+            <a class="nav-link" href="./timeline.html">
+              <i class="material-icons">timeline</i>
+              <p>Timeline</p>
+            </a>
+          </li>
+  
+          <li class="nav-item {% if page.url == "./leaderboard.html" %} active {% endif %}">
+            <a class="nav-link" href="./leaderboard.html">
+              <i class="material-icons">content_paste</i>
+              <p>Leaderboards</p>
+            </a>
+          </li>
+  
+          <li class="nav-item {% if page.url == "./contact.html" %} active {% endif %}">
+            <a class="nav-link" href="./contact.html">
+              <i class="material-icons">chat</i>
+              <p>Contact Us</p>
+            </a>
+          </li>
+          
+          <li class="nav-item {% if page.url == "./about.html" %} active {% endif %}">
+            <a class="nav-link" href="./about.html">
+              <i class="material-icons">info</i>
+              <p>About</p>
+            </a>
+          </li>
+  
+  
+        </ul>
+      </div>
+    </div>
+  <!---->
 
   {{content}}
 
