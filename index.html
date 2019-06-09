@@ -1,47 +1,53 @@
 ---
-layout: default
-title: BITS 2019
+layout: dash
+title: BITS 19 - Tasks
+alltasks: 24
+code: 8
+design: 8
+explore: 8
 ---
 
-  <!-- Navbar -->
-    <img src="BITS-logo.GIF" width="250px" height="250px" class="logo-bits">
-  <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top collapse" id="navigation-example">
+<script type="text/javascript">
+  var date = "June 10, 2019 12:00:00 AM";
+</script>
 
+<div class="main-panel">
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg  navbar-sticky fixed-top " id="navigation-example" style="background:blue;">
     <div class="container-fluid">
       <div class="navbar-wrapper">
-        <a class="navbar-brand" style="color: #b5caff00;"></a>
+        <div class="navbar-brand">Tasks</div>
+        <i class="material-icons" style="font-size:100%; position: relative; color:#a9afbbd1;">update</i>
+        <h6>
+          <div id="lastsync" style="position:absolute; color:#a9afbbd1;"></div>
+          <h6>
       </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+        aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
         <span class="sr-only">Toggle navigation</span>
         <span class="navbar-toggler-icon icon-bar"></span>
-        <span class="navbar-toggler-icon icon-bar middle"></span>
+        <span class="navbar-toggler-icon icon-bar"></span>
         <span class="navbar-toggler-icon icon-bar"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end">
+        <form class="navbar-form">
+          <div class="input-group no-border">
+            <div class="search-icon">
+              <i class="material-icons">search</i>
+              <div class="ripple-container"></div>
+            </div>
+            <input type="text" value="" id="myInput" onkeyup="myFunction()" class="form-control"
+              placeholder="Search...">
+          </div>
+        </form>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="https://acicts.io" target="_blank" style="color: #b5caff">
-              Register
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="" target="_blank"  style="color: #b5caff">
-              Dashboard
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="" target="_blank"  style="color: #b5caff">
-              Timeline
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="" target="_blank"  style="color: #b5caff">
-              About Crew
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="" target="_blank"  style="color: #b5caff">
-              Contact Us
+            <a class="nav-link" href="bits.acicts.io">
+              <i class="material-icons">home</i>
+              <p class="d-lg-none d-md-block">
+                Home Page
+              </p>
             </a>
           </li>
         </ul>
@@ -50,77 +56,161 @@ title: BITS 2019
   </nav>
   <!-- End Navbar -->
 
-  <div class="card comesold" id="" style="width:40%; position: absolute; bottom:40px; left:-10px; transition: 1s; z-index: 5;">
-    <div class="card-body">
-      <h4 class="card-title"  style="color: #b5caff">Coming Soon</h4>
-      <div class="card-text" style="font-size:200%;"><div id="demo" style="font-family:'Saira', sans-serif;  color: #b5caff; display:inline;"></div></div>
-  <i class="material-icons" style="font-size: 50px; position: absolute; right:0%; top:1px; color: #fff">
-          <div class="arrow"></div>
-      </i>
-      <style>
-      .arrow::before{
-        content: "keyboard_arrow_right";
-      }
-      .comesold:hover{
-        left:10px !important;
-      }
+  <div class="content" style="margin-top: -12px !important;">
 
-      /*          Changes for small display      */
-      @media (max-width: 700px) {
-        .comesold{
-          width:90% !important;
-          left:-75% !important;
-        }
-      }
-      @media (max-width: 991px) {
-        .comesold:hover{
-          left:10px !important;
-        }
-      }
-      </style>
-    </div>
-  </div>
-  <div class="page-header clear-filter">
-    <div class="page-header-image" style="background-image: url('./assets/img/sidebar-1.jpg');"></div>
-    <div class="content-center">
-      <div class="col-md-8 ml-auto mr-auto">
-        <div class="brand">
-          <img>
-          <h1 class="title" style="font-family:'Saira', sans-serif; color:#4498ff; text-shadow: 0px 0px 20px black;">
-            BITS '19
-          </h1>
-          <h6 style="background-color: rgba(255, 5, 5, 0.404); font-family:'Saira', sans-serif; padding: 5px; margin:auto; z-index: -1; width:300px;" class="secyear">Second Consecutive Year</h6>
-          <h3 class="description" style="font-family:'Saira', sans-serif; color: #b5caff; text-shadow:-4px 1px 20px black;">The Task Based Online<br>Intra-School ICT Competiton</h3>
-
-          <br/>
-          <a href="./tasks.html" class="btn btn-round btn-lg" style="background-color: rgba(71, 123, 255, 1); text-shadow:0px 0px 20px black;">Go to the dashboard</a>
+    <div class="container-fluid">
+      <div class="row first">
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6" onclick="filterSelection('all')">
+          <div class="card card-stats">
+            <div class="card-header card-header-info card-header-icon">
+              <div class="card-icon">
+                <i class="material-icons">all_inclusive</i>
+              </div>
+              <p class="card-category text-info"><big>All Tasks</big></p>
+              <h3 class="card-title">{{page.alltasks}}</h3>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons">label_off</i>
+                Filter off
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6" onclick="filterSelection('Code')">
+          <div class="card card-stats">
+            <div class="card-header card-header-warning card-header-icon">
+              <div class="card-icon">
+                <i class="material-icons">code</i>
+              </div>
+              <p class="card-category text-warning"><big>Code</big></p>
+              <h3 class="card-title">{{page.code}}
+              </h3>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons">label</i>
+                Filter Code Tasks
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6" onclick="filterSelection('Design')">
+          <div class="card card-stats">
+            <div class="card-header card-header-danger card-header-icon">
+              <div class="card-icon">
+                <i class="material-icons">brush</i>
+              </div>
+              <p class="card-category text-danger"><big>Design</big></p>
+              <h3 class="card-title">{{page.design}}</h3>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons">label</i>
+                Filter Design Tasks
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6" onclick="filterSelection('Explore')">
+          <div class="card card-stats">
+            <div class="card-header card-header-success card-header-icon">
+              <div class="card-icon">
+                <i class="material-icons">explore</i>
+              </div>
+              <p class="card-category text-success"><big>Explore</big></p>
+              <h3 class="card-title">{{page.explore}}</h3>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons">label</i>
+                Filter Explore Tasks
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div class="row" id="myUL">
+        {% for task in site.data.tasks %}
+        <div class="col-xl-4 col-md-12 filterDiv {{ task.category }}">
+          <div class="card card-chart task-card">
+            <a href="./tasks/{{ task.number }}" target="_blank">
+            <div class="card-header {% if task.category == 'Code' %}card-header-warning{% endif %}
+              {% if task.category == 'Design' %}card-header-danger{% endif %}
+              {% if task.category == 'Explore' %}card-header-success{% endif %}">
+              <h6>
+                  {% if task.simple == true %}
+                   <div class="card-new">
+                     ONLY FOR GRADE 6,7,8
+                     </div>
+                     <div class="card-new2">
+                        <h5>20</h5>
+                        Points
+                        </div>
+                  {% else %}
+                   <div class="card-new">
+                     FOR ALL STUDENTS
+                     </div>
+                     <div class="card-new2">
+                        <h5>25</h5>
+                        Points
+                        </div>
+                  {% endif %}
+
+                </h6>
+            </div>
+            <div class="card-body">
+
+
+              <span class="{% if task.category == 'Code' %}text-warning{% endif %}
+              {% if task.category == 'Design' %}text-danger{% endif %}
+              {% if task.category == 'Explore' %}text-success{% endif %}">{{ task.category }}</span>
+              <h4 class="card-title">{{ task.topic }}</h4>
+
+              <p class="card-category" style="color:#a9b8ffc9; opacity:0.5;">{{ task.description }}</p>
+
+            </div>
+            <div style="display:block; padding-left:20px; opacity:0.25">
+              <small>Click on the task to see more details. </small>
+              </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons" >content_paste</i> Task Number - {{ task.number }}
+              </div>
+            </div>
+
+
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
     </div>
   </div>
-  <footer class="footer">
-    <div class="container-fluid">
-      <!--nav style="float:left; transition: 1s;" id="linksleft" >
-        <ul>
-          <li>
-            <a href=""  style="color: #b5caff">
-              About Crew
-            </a>
-          </li>
-          <li>
-            <a href=""  style="color: #b5caff">
-              Contact Us
-            </a>
-          </li>
-        </ul>
-      </nav-->
-      <div class="copyright float-right"  style="color: #b5caff">
-          &copy;
-          <script>
-            document.write(new Date().getFullYear())
-          </script>
-          <a href="http://acicts.io/" target="_blank">ACICTS</a>  - All rights reserved.
-        </div>
-    </div>
-    <!--This Website is created by Supun Tharinda-->
-  </footer>
+
+  <style>
+    .card-new{
+      padding: 5px;
+      background-color:#1f294038;
+      border-radius: 10px;
+      border-left: 5px solid #1a203485;
+      margin-bottom: 0;
+      top: 6px;
+      left:10px;
+      position: absolute;
+    }
+    .card-new2{
+      padding: 5px;
+      background-color:#595d6694;
+      border-radius: 10px;
+      border-left: 5px solid #1a2034;
+      border-right: 5px solid #1a2034;
+      text-align: center;
+      margin-bottom: 0;
+      top: 6px;
+      right:10px;
+      position: absolute;
+    }
+  </style>

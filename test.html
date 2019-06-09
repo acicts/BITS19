@@ -4,7 +4,7 @@ title: BITS 19 - Online Test
 ---
 
 <script type="text/javascript">
-  var date = "June 1, 2019 12:00:00 AM";
+  var date = "June 10, 2019 12:00:00 AM";
 </script>
 
 <div class="main-panel">
@@ -39,7 +39,7 @@ title: BITS 19 - Online Test
         </form>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="./">
+            <a class="nav-link" href="bits.acicts.io">
               <i class="material-icons">home</i>
               <p class="d-lg-none d-md-block">
                 Home Page
@@ -80,7 +80,7 @@ title: BITS 19 - Online Test
                       Online Test
                       {% else %}
                       Hackerrank Test
-                      {% endif %}                      
+                      {% endif %}
                       </div>
                 </h6>
             </div>
@@ -89,20 +89,20 @@ title: BITS 19 - Online Test
                  <div class="card-text" style="font-size:200%;"><div style="font-family:'Saira', sans-serif;  color: #b5caff; display:inline;">
                     {{ test.date }}
                  </div></div>
-                    
+
               <span class="{% if test.category == 'OT' %}text-primary{% endif %}
               {% if test.category == 'HR' %}text-success{% endif %}"></span>
-              <h4 class="card-title">{{ test.topic }}</h4>          
+              <h4 class="card-title">{{ test.topic }}</h4>
               </div>
               {% if test.text == 'not' %}
-              <p class="card-category text-danger" style="text-align:center">The test is not started.</p>        
-              {% endif %}  
+              <p class="card-category text-danger" style="text-align:center">The test is not started.</p>
+              {% endif %}
               {% if test.text == 'go' %}
               <p class="card-category text-warning" style="text-align:center">The test is going on.</p>
-              {% endif %}  
+              {% endif %}
               {% if test.text == 'ok' %}
               <p class="card-category text-success" style="text-align:center">The test is finished.</p>
-              {% endif %}  
+              {% endif %}
             </div>
             <div style="display:block; padding-left:20px; opacity:0.25">
               <small>Click on the card to see visit test. </small>
@@ -114,7 +114,7 @@ title: BITS 19 - Online Test
               </div>
             </div>
 
-            
+
             </a>
           </div>
         </div>
