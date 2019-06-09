@@ -2,34 +2,34 @@
   name: Online Test
   topic:  First Online Test
   description: For grade 6,7,8
-  text: go
-  date: 14.06.2019
-  link: 
+  text: not
+  date: 13.06.2019
+  link:
   simple: true
 
 - category: OT
   name: Online Test
   topic:  First Online Test
-  description: For grade 6,7,8
-  text: ok
-  date: 14.06.2019
-  link: 
+  description: For grade 9,10,11
+  text: not
+  date: 13.06.2019
+  link:
   simple: true
 
-- category: OT
-  name: Online Test
-  topic:  First Online Test
-  description: For grade 6,7,8
-  text: not
-  date: 14.06.2019
-  link: 
-  simple: true
+#- category: OT
+#  name: Online Test
+#  topic:  First Online Test
+#  description: For grade 6,7,8
+#  text: not | go | ok
+#  date: 14.06.2019
+#  link:
+# simple: true
 
-- category: HR
-  name: Hackkerank
-  topic:  Hackerrank Test
-  description: For grade 6,7,8
-  text: not
-  date: 21.06.2019
-  link: 
-  simple: true
+#- category: HR
+#  name: Hackkerank
+#  topic:  Hackerrank Test
+#  description: For grade 6,7,8
+#  text: not
+#  date: 21.06.2019
+#  link:
+#  simple: true
