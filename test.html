@@ -4,7 +4,7 @@ title: BITS 19 - Online Test
 ---
 
 <script type="text/javascript">
-  var date = "June 10, 2019 12:00:00 AM";
+  var date = "June 13, 2019 12:00:00 AM";
 </script>
 
 <div class="main-panel">
@@ -13,7 +13,7 @@ title: BITS 19 - Online Test
   <nav class="navbar navbar-expand-lg  navbar-sticky fixed-top " id="navigation-example" style="background:blue;">
     <div class="container-fluid">
       <div class="navbar-wrapper">
-        <div class="navbar-brand">Online Test</div>
+        <div class="navbar-brand">Test</div>
         <i class="material-icons" style="font-size:100%; position: relative; color:#a9afbbd1;">update</i>
         <h6>
           <div id="lastsync" style="position:absolute; color:#a9afbbd1;"></div>
@@ -52,10 +52,12 @@ title: BITS 19 - Online Test
   </nav>
   <!-- End Navbar -->
 
-  <div class="content" style="margin-top: -12px !important;">
-
+  <div class="content" style="margin-top: 0px !important;">
+<div class="notice" >
+{% include notices.html %}
+</div>
     <div class="container-fluid">
-
+	
       <div class="row" id="myUL">
         {% for test in site.data.test %}
         <div class="col-xl-4 col-md-12 filterDiv">

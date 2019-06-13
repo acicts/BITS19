@@ -4409,8 +4409,13 @@ tbody.collapse.show {
   .navbar-sticky{
     position: fixed !important;
   }
-  .row:nth-child(1){
-    margin-top: 60px !important;
+  div .notice{
+    margin-top: 50px !important;
+	margin-left: 20px !important;
+	margin-right: 20px !important;
+  }
+  div .notice h6{
+	padding-right: 20px !important;
   }
 }
 
