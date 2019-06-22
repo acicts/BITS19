@@ -20,18 +20,18 @@
   name: Online Test
   topic:  Second Online Test
   description: For grade 6,7,8
-  text: not
+  text: go
   date: 22.06.2019
-  link: 
+  link: https://www.proprofs.com/quiz-school/story.php?title=mjq5njmxnq77b5
   simple: true
 
 - category: OT
   name: Online Test
   topic:  First Online Test
   description: For grade 9,10,11
-  text: not
+  text: go
   date: 22.06.2019
-  link: 
+  link: https://www.proprofs.com/quiz-school/story.php?title=mjq5ntc0oq6bb5
   simple: 
 
 #- category: OT
