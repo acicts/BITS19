@@ -69,7 +69,8 @@ title: BITS 2019 - Tasks
             <div class="card">
               <div class="card-header {% if page.category == 'Code' %}card-header-warning{% endif %}
               {% if page.category == 'Design' %}card-header-danger{% endif %}
-              {% if page.category == 'Explore' %}card-header-success{% endif %}">
+              {% if page.category == 'Explore' %}card-header-success{% endif %}
+		{% if page.category == 'Advanced' %}card-header-primary{% endif %}">
                   <img src="../BITS-logo.GIF" style="width:150px; height: 150px; position: static;  filter: invert(1); -webkit-filter: invert(100%);
                   -moz-filter: invert(100%);
                 -ms-filter: invert(100%);
@@ -81,18 +82,26 @@ title: BITS 2019 - Tasks
                 <p class="card-category" style="font-family:'Saira', sans-serif; background: #00000059; min-width:30px; padding-left:10px; padding-right:10px; border-radius: 12px; text-align: center; display:inline-block;">{{ page.category }}</p>
                 <p class="card-category" style="font-family:'Saira', sans-serif; background: #00000059; min-width:30px; padding-left:10px; padding-right:10px; border-radius: 12px; text-align: center; display:inline-block;">Task number - {{ page.tasknum }}</p>
                 <p class="card-category" style="font-family:'Saira', sans-serif; background: #00000059; min-width:30px; padding-left:10px; padding-right:10px; border-radius: 12px; text-align: center; display:inline-block;">
+		{% if page.adv == true %}
+			Advanced tasks
+		{% else %}
                     {% if page.type == true %}
                       Only for grade 6,7,8
                    {% else %}
                       For all students
                    {% endif %}
+		{% endif %}
                 </p>
                 <p class="card-category" style="font-family:'Saira', sans-serif; background: #00000059; min-width:30px; padding-left:10px; padding-right:10px; border-radius: 12px; text-align: center; display:inline-block;">
-                    {% if page.type == true %}
+                    {% if page.adv == true %}
+			 100 Points
+		{% else %}
+{% if page.type == true %}
                       20 Points
                    {% else %}
                       25 Points
                    {% endif %}
+{% endif %}
                 </p>
               </div>
               </div>
