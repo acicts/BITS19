@@ -5,10 +5,11 @@ alltasks: 24
 code: 8
 design: 8
 explore: 8
+adv: 3
 ---
 
 <script type="text/javascript">
-  var date = "June 10, 2019 12:00:00 AM";
+  var date = "July 02, 2019 06:00:00 PM";
 </script>
 
 <div class="main-panel">
@@ -135,6 +136,23 @@ explore: 8
             </div>
           </div>
         </div>
+	<div class="col-xl-12 col-lg-6 col-md-6 col-sm-6" onclick="filterSelection('Advanced')">
+          <div class="card card-stats">
+            <div class="card-header card-header-primary card-header-icon">
+              <div class="card-icon">
+                <i class="material-icons">memory</i>
+              </div>
+              <p class="card-category text-primary"><big>Advanced</big></p>
+              <h3 class="card-title">{{page.adv}}</h3>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons">label</i>
+                Filter Advanced Tasks
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="row" id="myUL">
@@ -144,8 +162,19 @@ explore: 8
             <a href="./tasks/{{ task.number }}" target="_blank">
             <div class="card-header {% if task.category == 'Code' %}card-header-warning{% endif %}
               {% if task.category == 'Design' %}card-header-danger{% endif %}
-              {% if task.category == 'Explore' %}card-header-success{% endif %}">
+              {% if task.category == 'Explore' %}card-header-success{% endif %}
+{% if task.category == 'Advanced' %}card-header-primary{% endif %}">
               <h6>
+
+		{% if task.adv == true %}
+                   <div class="card-new">
+                     Advanced tasks
+                     </div>
+                     <div class="card-new2" style="background-color:rgb(255, 246, 74, 0.6); color: black;">
+                        <h5>100</h5>
+                        Points
+                        </div>
+		{% else %}
                   {% if task.simple == true %}
                    <div class="card-new">
                      ONLY FOR GRADE 6,7,8
@@ -153,7 +182,8 @@ explore: 8
                      <div class="card-new2">
                         <h5>20</h5>
                         Points
-                        </div>
+                        </div>	
+		
                   {% else %}
                    <div class="card-new">
                      FOR ALL STUDENTS
@@ -163,6 +193,7 @@ explore: 8
                         Points
                         </div>
                   {% endif %}
+{% endif %}
 
                 </h6>
             </div>

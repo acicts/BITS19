@@ -1,3 +1,23 @@
+- category: Advanced
+  topic: Open Source
+  description: Learn GitHub and do sustainable improvement in FOSS.
+  number: A1
+  adv: true
+
+- category: Advanced
+  topic: Google Sketchup
+  description: Learn Google Sketchup and designing using it.
+  number: A2
+  adv: true
+
+- category: Advanced
+  topic: Social Research
+  description: Make a research in school and give better ideas.
+  number: A3
+  adv: true
+
+#########
+
 - category: Code
   topic:  Simple Programming
   description: Create a small calculator with basic functions.
