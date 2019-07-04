@@ -67,7 +67,7 @@ title: BITS 19 - Online Test
               {% if test.category == 'OT' %}card-header-primary{% endif %}
               {% if test.category == 'HR' %}card-header-success{% endif %}">
               <h6>
-                  {% if test.simple == true %}
+                   <!--{% if test.simple == true %}
                    <div class="card-new">
                      FOR GRADE 6,7,8
                      </div>
@@ -75,7 +75,11 @@ title: BITS 19 - Online Test
                    <div class="card-new">
                      FOR GRADE 9,10,11
                      </div>
-                  {% endif %}
+                  {% endif %}-->
+		<div class="card-new">
+                     {{ test.description }}
+
+                     </div>
 
                   <div class="card-new2">
                       {% if test.category == 'OT' %}
@@ -112,7 +116,11 @@ title: BITS 19 - Online Test
             <div class="card-footer">
               <div class="stats">
                 <i class="material-icons" >content_paste</i>
+		{% if test.simple != 'final' %}
               On - {{ test.date }} at 7PM to next day 7AM.
+		{% else %}
+		On - {{ test.date }} at ICT lab in the morning.
+		{% endif %}
               </div>
             </div>
 
