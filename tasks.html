@@ -1,0 +1,253 @@
+---
+layout: dash
+title: BITS 19 - Tasks
+alltasks: 27
+code: 8
+design: 8
+explore: 8
+adv: 3
+---
+
+<script type="text/javascript">
+  var date = "July 02, 2019 06:00:00 PM";
+</script>
+
+<div class="main-panel">
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg  navbar-sticky fixed-top " id="navigation-example" style="background:blue;">
+    <div class="container-fluid">
+      <div class="navbar-wrapper">
+        <div class="navbar-brand">Tasks</div>
+        <i class="material-icons" style="font-size:100%; position: relative; color:#a9afbbd1;">update</i>
+        <h6>
+          <div id="lastsync" style="position:absolute; color:#a9afbbd1;"></div>
+          <h6>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index"
+        aria-expanded="false" aria-label="Toggle navigation" data-target="#navigation-example">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+        <span class="navbar-toggler-icon icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end">
+        <form class="navbar-form">
+          <div class="input-group no-border">
+            <div class="search-icon">
+              <i class="material-icons">search</i>
+              <div class="ripple-container"></div>
+            </div>
+            <input type="text" value="" id="myInput" onkeyup="myFunction()" class="form-control"
+              placeholder="Search...">
+          </div>
+        </form>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://bits.acicts.io">
+              <i class="material-icons">home</i>
+              <p class="d-lg-none d-md-block">
+                Home Page
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <div class="content" style="margin-top: 0px !important;">
+
+<div class="notice" >
+{% include notices.html %}
+</div>
+
+    <div class="container-fluid">
+      <div class="row first">
+
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6" onclick="filterSelection('all')">
+
+          <div class="card card-stats">
+            <div class="card-header card-header-info card-header-icon">
+              <div class="card-icon">
+                <i class="material-icons">all_inclusive</i>
+              </div>
+              <p class="card-category text-info"><big>All Tasks</big></p>
+              <h3 class="card-title">{{page.alltasks}}</h3>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons">label_off</i>
+                Filter off
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6" onclick="filterSelection('Code')">
+          <div class="card card-stats">
+            <div class="card-header card-header-warning card-header-icon">
+              <div class="card-icon">
+                <i class="material-icons">code</i>
+              </div>
+              <p class="card-category text-warning"><big>Code</big></p>
+              <h3 class="card-title">{{page.code}}
+              </h3>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons">label</i>
+                Filter Code Tasks
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6" onclick="filterSelection('Design')">
+          <div class="card card-stats">
+            <div class="card-header card-header-danger card-header-icon">
+              <div class="card-icon">
+                <i class="material-icons">brush</i>
+              </div>
+              <p class="card-category text-danger"><big>Design</big></p>
+              <h3 class="card-title">{{page.design}}</h3>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons">label</i>
+                Filter Design Tasks
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6" onclick="filterSelection('Explore')">
+          <div class="card card-stats">
+            <div class="card-header card-header-success card-header-icon">
+              <div class="card-icon">
+                <i class="material-icons">explore</i>
+              </div>
+              <p class="card-category text-success"><big>Explore</big></p>
+              <h3 class="card-title">{{page.explore}}</h3>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons">label</i>
+                Filter Explore Tasks
+              </div>
+            </div>
+          </div>
+        </div>
+	<div class="col-xl-12 col-lg-6 col-md-6 col-sm-6" onclick="filterSelection('Advanced')">
+          <div class="card card-stats">
+            <div class="card-header card-header-primary card-header-icon">
+              <div class="card-icon">
+                <i class="material-icons">memory</i>
+              </div>
+              <p class="card-category text-primary"><big>Advanced</big></p>
+              <h3 class="card-title">{{page.adv}}</h3>
+            </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons">label</i>
+                Filter Advanced Tasks
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="myUL">
+        {% for task in site.data.tasks %}
+        <div class="col-xl-4 col-md-12 filterDiv {{ task.category }}">
+          <div class="card card-chart task-card">
+            <a href="./tasks/{{ task.number }}" target="_blank">
+            <div class="card-header {% if task.category == 'Code' %}card-header-warning{% endif %}
+              {% if task.category == 'Design' %}card-header-danger{% endif %}
+              {% if task.category == 'Explore' %}card-header-success{% endif %}
+{% if task.category == 'Advanced' %}card-header-primary{% endif %}">
+              <h6>
+
+		{% if task.adv == true %}
+                   <div class="card-new">
+                     Advanced tasks
+                     </div>
+                     <div class="card-new2" style="background-color:rgb(255, 246, 74, 0.6); color: black;">
+                        <h5>100</h5>
+                        Points
+                        </div>
+		{% else %}
+                  {% if task.simple == true %}
+                   <div class="card-new">
+                     ONLY FOR GRADE 6,7,8
+                     </div>
+                     <div class="card-new2">
+                        <h5>20</h5>
+                        Points
+                        </div>	
+		
+                  {% else %}
+                   <div class="card-new">
+                     FOR ALL STUDENTS
+                     </div>
+                     <div class="card-new2">
+                        <h5>25</h5>
+                        Points
+                        </div>
+                  {% endif %}
+{% endif %}
+
+                </h6>
+            </div>
+            <div class="card-body">
+
+
+              <span class="{% if task.category == 'Code' %}text-warning{% endif %}
+              {% if task.category == 'Design' %}text-danger{% endif %}
+              {% if task.category == 'Explore' %}text-success{% endif %}">{{ task.category }}</span>
+              <h4 class="card-title">{{ task.topic }}</h4>
+
+              <p class="card-category" style="color:#a9b8ffc9; opacity:0.5;">{{ task.description }}</p>
+
+            </div>
+            <div style="display:block; padding-left:20px; opacity:0.25">
+              <small>Click on the task to see more details. </small>
+              </div>
+            <div class="card-footer">
+              <div class="stats">
+                <i class="material-icons" >content_paste</i> Task Number - {{ task.number }}
+              </div>
+            </div>
+
+
+            </a>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+
+  <style>
+    .card-new{
+      padding: 5px;
+      background-color:#1f294038;
+      border-radius: 10px;
+      border-left: 5px solid #1a203485;
+      margin-bottom: 0;
+      top: 6px;
+      left:10px;
+      position: absolute;
+    }
+    .card-new2{
+      padding: 5px;
+      background-color:#595d6694;
+      border-radius: 10px;
+      border-left: 5px solid #1a2034;
+      border-right: 5px solid #1a2034;
+      text-align: center;
+      margin-bottom: 0;
+      top: 6px;
+      right:10px;
+      position: absolute;
+    }
+  </style>
